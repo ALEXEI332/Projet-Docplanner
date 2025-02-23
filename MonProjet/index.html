@@ -39,22 +39,34 @@
     <main>
         <div class="main-product">
             <div class="img-details">
-                <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/038a38ee-81eb-4a80-b163-ab0e20905c22/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
-                    alt="" />
-                <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/9bc4be31-0822-41c7-ab84-9a90231945ec/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
-                    alt="" />
-                <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/a5471713-26d6-4325-9135-4d0a3d0a41e3/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
-                    alt="" />
-                <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/8378ea43-68be-4271-bbba-67d2c2f15565/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
-                    alt="" />
-                <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/d6053327-9eca-46d4-a1ce-fad45709e8ff/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
-                    alt="" />
-                <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/01a77d6b-f644-4b83-aef7-7848eaa28533/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
-                    alt="" />
+                <div class="nikeshoes">
+                    <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/038a38ee-81eb-4a80-b163-ab0e20905c22/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
+                        alt="" id="nikeshoes-1"/>
+                </div>
+                <div class="nikeshoes">
+                    <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/9bc4be31-0822-41c7-ab84-9a90231945ec/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
+                        alt="" id="nikeshoes-2" />
+                </div>
+                <div class="nikeshoes">
+                    <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/a5471713-26d6-4325-9135-4d0a3d0a41e3/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
+                        alt="" id="nikeshoes-3"/>
+                </div>
+                <div class="nikeshoes">
+                    <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/8378ea43-68be-4271-bbba-67d2c2f15565/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
+                        alt="" id="nikeshoes-4"/>
+                </div>
+                <div class="nikeshoes">
+                    <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/d6053327-9eca-46d4-a1ce-fad45709e8ff/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
+                        alt="" id="nikeshoes-5" />
+                </div>
+                <div class="nikeshoes">
+                    <img src="https://static.nike.com/a/images/w_320,q_auto,f_auto/01a77d6b-f644-4b83-aef7-7848eaa28533/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
+                        alt="" id="nikeshoes-6"/>
+                </div>
             </div>
-            <div class="img-display">
+            <div id="img-display">
                 <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/038a38ee-81eb-4a80-b163-ab0e20905c22/date-de-sortie-de-la-gato-%C2%AB%C2%A0coastal-blue%C2%A0%C2%BB-hq6020-400.jpg"
-                    alt="">
+                    alt="" id="img-display-on"/>
             </div>
         </div>
         <div class="main-description">
@@ -70,25 +82,26 @@
             </div>
             <div class="button">
                 <div class="button-left">
-                <div class="button-minus">
-                    <button id="minus"><b>-</b></button>
+                    <div class="button-minus">
+                        <button id="minus"><b>-</b></button>
+                    </div>
+                    <div class="quantity">
+                        <button class="number"><b>0</b></button>
+                    </div>
+                    <div class="button-plus">
+                        <button id="plus"><b>+</b></button>
+                    </div>
                 </div>
-                <div class="quantity">
-                    <button class="number"><b>0</b></button>
-                </div>
-                <div class="button-plus">
-                    <button id="plus"><b>+</b></button>
+                <div class="button-right">
+                    <input type="button" id="add-card" value="ADD TO CARD" />
                 </div>
             </div>
-            <div class="button-right">
-                <input type="button" id="add-card" value="ADD TO CARD"/>
-            </div>
-        </div>
     </main>
 
     <footer>
 
     </footer>
+    <script src="C:\Users\HUAWEI\Cheickpoint docplaner\MonProjet\script.js"></script>
 </body>
 
 </html>

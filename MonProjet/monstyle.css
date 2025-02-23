@@ -9,6 +9,7 @@
 body {
     font-family: "Quicksand", serif;
     padding: 15px 110px 0px 110px;
+    background-color: white;
 }
 
 .navbar {
@@ -84,13 +85,16 @@ main {
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.123);
 }
+
 .img-details img:hover{
     -webkit-transform:scale(1.07);
     transform:scale(1.07);
+    background-color:rgb(211,211,211);
 }
 
-.img-display {
+#img-display {
     border: solid yellow;
     margin-left: 5px;
     padding-right: 0px;
@@ -98,10 +102,9 @@ main {
     align-items: flex-end;
 }
 
-.img-display img {
+#img-display img {
     width: 660px;
-    margin-bottom: -107px;
-    image-rendering: pixelated;
+    margin-bottom: -62px;
 }
 
 .main-description {
@@ -127,19 +130,22 @@ main {
 .button-left {
     display: flex;
     border: solid black;
-    height: 35px;
+    height: 38px;
 }
 
 .button-left button {
     width: 35px;
     height: 100%;
     font-size:medium;
+}
+.quantity button{
     background-color: white;
+    border:none;
 }
 
 .button-right input {
     width: 150px;
-    height: 35px;
+    height:100%;
     font-size: 15px;
     font-weight: bold;
     background-color: rgb(18, 66, 125);
