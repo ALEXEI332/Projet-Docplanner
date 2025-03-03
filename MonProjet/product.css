@@ -1,0 +1,15 @@
+body{
+    box-sizing: border-box;
+    margin-left: 65px;
+    margin-right: 105px;
+
+}
+
+
+.skeleton-back{
+    margin-top:3px;
+    height:350px;
+    border:solid green;
+    background-image: url("MonProjet/mes images/AdobeStock_1293615905_Preview_edited.jpg");
+    background-color: blue;
+}
