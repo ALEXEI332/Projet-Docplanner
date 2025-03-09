@@ -1,13 +1,291 @@
-body{
+body {
     box-sizing: border-box;
-    margin-left: 65px;
-    margin-right: 105px;
+    margin-left: 360px;
+    margin-right: 360px;
 
 }
 
-
-.skeleton-back{
-    margin-top:3px;
-    height:350px;
-    border:solid green;
+.overlay-popup {
+    position: fixed;
+    width:53%;
+    margin-left: 0px;
+    background-color: hwb(0 0% 100% / 0.906);
+    z-index: 90;
+    display:none;
+    align-items: center;
+    justify-content: center;
 }
+
+#overlay-content {
+    width: 100%;
+    height: 98%;
+    margin:0px;
+    position:relative;
+    background-color:white;
+}
+
+.active-popup{
+    display: flex !important;
+}
+
+.closebtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 20px;
+    margin-right: -35px;
+    margin-bottom: -35px;
+}
+
+.closebtn button {
+    color: white;
+    background-color: yellowgreen;
+    padding: 10px;
+    position: absolute;
+    font-size:14px;
+}
+
+.skeleton-back {
+    height: 575px;
+    background-image: url("https://t4.ftcdn.net/jpg/09/32/33/87/240_F_932338784_Fm85c2iVQih2kVIyWEhQdpQnhxn4XJXA.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.introduction{
+display:flex;
+justify-content: space-between;
+}
+
+.introduction p {
+    font-family: Times New Roman;
+    margin-left: 25px;
+    font-family: serif;
+    font-size: 35px;
+    color: white;
+}
+
+
+.introduction .call-to-contact{
+    border:none;
+    margin-right:8px;
+}
+
+
+.blue-p {
+    font-family: Arial;
+    font-size: 35px;
+    margin-top: -68px;
+    margin-left: 25px;
+    color: rgba(0, 0, 255, 0.532);
+}
+
+.skeleton-call {
+    margin-top:44px;
+}
+
+.skeleton-call p {
+    color: white;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-bottom:9px ;
+}
+
+.to-open-popup {
+    background-color: hsla(240, 100%, 50%, 0.959);
+    width: 100px;
+    padding: 8px;
+    margin-left: 25px;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.to-open-popup a {
+    text-decoration: none;
+    color: white;
+}
+
+.reasons-for-choice {
+    display: flex;
+    flex-direction: column;
+    height: 516px;
+    background-color: aliceblue;
+}
+
+.why-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 107px;
+    font-size: 20px;
+}
+
+.gap-line{
+    border:1px solid hwb(0 50% 50% / 0.179);
+    width:300px;
+    height:0px;
+    color: grey;
+}
+
+.product-features {
+    display: flex;
+    height: 350px;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-features h2 {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.product-features img {
+    width: 170px;
+    height: 170px;
+}
+
+.product-features p {
+    margin-top: -15px;
+    text-align: justify;
+}
+
+.feature-one,
+.feature-two,
+.feature-three {
+    width: 170px;
+    height: 170px;
+    margin-left: 10px;
+    margin-top: -128px;
+}
+
+.call-to-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+}
+
+.contact-btn {
+    width: 105px;
+    padding: 9px;
+    background-color: rgba(37, 43, 226, 0.756);
+    border-radius: 5px;
+    border:none;
+    padding: 11px;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.popup-content {
+    padding: 15px;
+}
+
+.popup-content h1 {
+    margin-left: 10px;
+}
+
+.popup-content hr {
+    border: 1px solid#f1f1f1;
+    margin-bottom: 27px;
+}
+
+.popup-content label {
+    margin-left: 10px;
+}
+
+.popup-content input {
+    width: 98%;
+    padding: 15px;
+    margin: 5px 0px 25px 10px;
+    display: inline-block;
+    border: none;
+    background-color: #ddd;
+}
+
+.popup-content input:focus {
+    background-color: hwb(0 87% 13% / 0.078);
+}
+
+
+.checkbox {
+    display: inline-flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+.popup-content p {
+    margin-left: 10px;
+}
+
+
+.clearfix button {
+    float: left;
+    width: 50%;
+    padding: 11px;
+    font-size: 25px;
+    margin-bottom: 25px;
+    background-color: rgba(255, 55, 0, 0.881);
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (max-width:300) {
+    .clearfix button {
+        width: 100%;
+    }
+}
+
+
+.contact-form {
+    padding-top: 23px;
+    display: block;
+    border: 1px solid gray;
+}
+
+
+.contact-form label {
+    margin-left: 20px;
+}
+
+.contact-form input {
+    width: 95%;
+    padding: 15px;
+    border: solid rgba(37, 43, 226, 0.756);
+    margin: 5px 0px 25px 20px;
+}
+
+textarea {
+    margin-top: 11px;
+    width: 95%;
+    margin-left: 20px;
+}
+
+input[type=submit] {
+    width: 107px;
+    padding: 11px;
+    font-size: 19px;
+    background-color: rgba(37, 43, 226, 0.756);
+    border: none;
+    color: white;
+}
+
