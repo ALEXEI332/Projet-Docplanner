@@ -221,11 +221,16 @@ justify-content: space-between;
 
 
 .checkbox {
-    display: inline-flex;
+    display:flex;
     margin-top: 15px;
     margin-bottom: 10px;
+    margin-left:100px;
 }
 
+.checkbox input{
+    margin-left:-365px;
+    margin-right:-359px ;
+}
 
 .popup-content p {
     margin-left: 10px;
@@ -260,8 +265,13 @@ justify-content: space-between;
     padding-top: 23px;
     display: block;
     border: 1px solid gray;
+    background-color: goldenrod;
 }
 
+.contact-form h1{
+    text-align: center;
+    text-decoration: underline;
+}
 
 .contact-form label {
     margin-left: 20px;
@@ -270,9 +280,13 @@ justify-content: space-between;
 .contact-form input {
     width: 95%;
     padding: 15px;
-    border: solid rgba(37, 43, 226, 0.756);
     margin: 5px 0px 25px 20px;
 }
+
+.contact-form input:focus{
+background-color:rgba(37, 43, 226, 0.756) ;
+}
+
 
 textarea {
     margin-top: 11px;
